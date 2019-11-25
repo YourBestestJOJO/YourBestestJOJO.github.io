@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<title>Flexbox Example</title>
+</head>
+<body>
+<!--Navbar-->
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="Photography.html">Photography</a>
+  <a href="schoolwork.html">Schoolwork</a>
+  <a href="Personal Work.html">Personal Work</a>
+  <a href="about.html">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<!--end nav -->
+<div class="flex-container">
+  <center><h1>Personal Work<h1></center>
+	<center><img src="img/3000.pdf"></center>
+
+<center><img src="img/front.pdf"></center>
+<center><img src="img/back.pdf"></center>
+
+
+<!--makes smushed menu interactive-->
+	<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</div>
+</body>
+</html> 
